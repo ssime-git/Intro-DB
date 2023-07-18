@@ -10,5 +10,11 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
 
+  mongo-shell:
+    image: mongo
+    depends_on:
+      - mongodb
+    command: mongo --host mongodb -u admin -p password --authenticationDatabase admin
+
 volumes:
   mongo-data:
