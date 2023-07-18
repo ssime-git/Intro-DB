@@ -1,10 +1,12 @@
 # Intro-DB
+
 A weak introduction to database introduction
 
 # Ressources:
 
 1. Data source: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 2. Work with MongoDB: https://github.com/sonyarianto/docker-compose-mongodb/blob/master/README.md
+3. https://www.baeldung.com/linux/mongodb-as-docker-container
 
 # Notes
 
