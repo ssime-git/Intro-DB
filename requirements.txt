@@ -2,3 +2,5 @@ SQLAlchemy
 ipython-sql
 psycopg2-binary
 pandas
+pyarrow
+fastparquet
