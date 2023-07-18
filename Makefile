@@ -15,3 +15,5 @@ install_deps:
 
 get_data:
 	wget https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2014-01.parquet
+
+setup: up pgcli install_deps
