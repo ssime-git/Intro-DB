@@ -1,14 +1,18 @@
 # Intro-DB
 
-A weak introduction to database introduction
+In this repo we will work with:
+* Postgresql to showcase relational DBMS
+* MongoDB
 
-# Ressources:
+The main purpose is to see the difference in terms of flexibility. Of course over Internet you will find much more explanation but don't hesitate to reach out if you have any question.
+
+# Some ressources:
 
 1. Data source: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 2. Work with MongoDB: https://github.com/sonyarianto/docker-compose-mongodb/blob/master/README.md
 3. https://www.baeldung.com/linux/mongodb-as-docker-container
 
-# Notes
+# How to use different docker-compose files
 
 You can specify a docker compose file in the `docker-compose up` command using the following command:
 
@@ -24,7 +28,7 @@ Source:
 (3) Use Docker Compose | Docker Documentation. https://docs.docker.com/get-started/08_using_compose/.
 
 
-# Mongo
+# How to use MongoDB
 
 It is possible to use the `mongo` shell to interact with the MongoDB database. To do so, follow these steps:
 
@@ -64,5 +68,3 @@ You can enter additional MongoDB shell commands as needed to interact with the d
 Remember to replace `sampledb` and `samplecollection` with your actual database name and collection name.
 
 If you prefer a more interactive experience, you can also use MongoDB GUI clients like MongoDB Compass or Robo3T to connect to the MongoDB container and perform database operations.
-
-Let me know if you have any further questions!
