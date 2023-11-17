@@ -38,7 +38,42 @@ It is possible to use the `mongo` shell to interact with the MongoDB database. T
 
 ```bash
 docker-compose up -d
+
+# connect to pgcli (postgresql)
+docker exec -it intro-db_postgres_1 psql -U username ny_taxi
 ```
+
+To connect to a **PostgreSQL** database using **pgcli**, you can use the following command-line options:
+
+1. **Basic Connection**:
+   - If you know the **host address**, **port**, **username**, and **database name**, you can use the following format:
+     ```
+     pgcli -h <host> -p <port> -U <username> <dbname>
+     ```
+     - Replace `<host>`, `<port>`, `<username>`, and `<dbname>` with your actual values.
+
+2. **Using a URL**:
+   - You can also connect directly using a **URL**:
+     ```
+     pgcli 'postgresql://user:password@localhost:port/db_name'
+     ```
+     - Replace `user`, `password`, `localhost`, `port`, and `db_name` with your specific details.
+
+3. **Examples**:
+   - Connect to a local database named `local_database`:
+     ```
+     pgcli local_database
+     ```
+   - Connect to a remote database using a URL:
+     ```
+     pgcli postgres://amjith:passw0rd@example.com:5432/app_db
+     ```
+   - Specify host and port explicitly:
+     ```
+     pgcli -h localhost -p 5432 -U amjith app_db
+     ```
+
+Remember to adjust the parameters according to your PostgreSQL setup. Happy querying! 🐘
 
 3. Open a new terminal window and run the following command to enter the MongoDB container:
 
